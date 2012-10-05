@@ -34,6 +34,10 @@ sysctl -p
 sed -i 's/NEIGHBOUR_DEVS=detect/NEIGHBOUR_DEVS=all/g' /etc/vz/vz.conf
 sed -i 's/SELINUX=enabled/SELINUX=disabled/g' /etc/sysconfig/selinux
 
+echo 'Now downloading CentOS6 x86_64 template....'
+cd /vz/template/cache
+wget http://download.openvz.org/template/precreated/centos-6-x86_64.tar.gz
+
 echo '..... well.... that should do it. Your going to need to run "reboot".'
 echo 'oh, and ur welcome...'
 

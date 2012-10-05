@@ -26,7 +26,7 @@ echo 'net.ipv4.conf.all.rp_filter = 1' >> /etc/sysctl.conf
 echo 'net.ipv4.conf.default.send_redirects = 1' >> /etc/sysctl.conf
 echo 'net.ipv4.conf.all.send_redirects = 0' >> /etc/sysctl.conf
 echo 'net.ipv4.icmp_echo_ignore_broadcasts=1' >> /etc/sysctl.conf
-echo 'net.ipv4.conf.default.forwarding=1'' >> /etc/sysctl.conf
+echo 'net.ipv4.conf.default.forwarding=1' >> /etc/sysctl.conf
 
 echo 'Done with that, purging your sys configs'
 sysctl -p

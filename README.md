@@ -13,3 +13,10 @@ Install NodeJS on CentOS 6.x
 -----
 
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNodeJS.sh)
+
+
+Install LAMP stack on CentOS 6.x
+-----
+
+    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installLAMP.sh)
+

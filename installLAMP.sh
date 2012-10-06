@@ -32,4 +32,4 @@ done
 
 
 clear
-echo 'Okay.... mysql is installed, running and set to your desired password'
+echo 'Okay.... apache, php and mysql is installed, running and set to your desired password'

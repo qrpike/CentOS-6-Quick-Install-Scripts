@@ -30,7 +30,7 @@ Install MongoDB on CentOS 6.x
 To install them All:
 -----
 
-    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installMongoDB.sh) && \
+    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZ.sh) && \
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNodeJS.sh) && \
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installLAMP.sh) && \
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installMongoDB.sh)

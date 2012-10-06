@@ -1,4 +1,6 @@
 #!/bin/bash
+# run: source <(curl -s https://raw.github.com/qrpike/CentOS6---OpenVZ-Installer/master/installOpenVZ.sh)
+
 
 clear
 echo 'Going to install OpenVZ for you..'

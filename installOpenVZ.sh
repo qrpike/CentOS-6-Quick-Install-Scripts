@@ -41,7 +41,7 @@ cd /vz/template/cache
 wget http://download.openvz.org/template/precreated/centos-6-x86_64.tar.gz
 
 echo ' - - - - - - - - - - - - - - - - - - - - - - '
-echo ' disabled iptables to access VMs /etc/init.d/iptables stop && chkconfig iptables off'
+echo ' disable iptables to access VMs /etc/init.d/iptables stop && chkconfig iptables off'
 echo ' - - - - - - - - - - - - - - - - - - - - - - '
 
 echo '..... well.... that should do it. Your going to need to run "reboot".'

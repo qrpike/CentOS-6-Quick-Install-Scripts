@@ -1,5 +1,8 @@
-CentOS6---OpenVZ-Installer
+CentOS6 OpenVZ Installer
 ==========================
+
+Install OpenVZ on CentOS 6
+-----
 
 To run this script just copy paste this command into a fresh copy of CentOS6.x (x86_64)
 

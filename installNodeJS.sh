@@ -3,7 +3,7 @@
 # CHANGE THIS URL FOR DIFF VERSIONS :::
 # -----------------------------------------------------
 
-JSURL=http://nodejs.org/dist/v0.8.16/node-v0.8.16.tar.gz
+JSURL=http://nodejs.org/dist/v0.8.18/node-v0.8.18.tar.gz
 
 # -----------------------------------------------------
 

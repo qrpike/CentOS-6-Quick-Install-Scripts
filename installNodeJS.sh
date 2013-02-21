@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#install NTP just incase:
+source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
+
 # CHANGE THIS URL FOR DIFF VERSIONS :::
 # -----------------------------------------------------
 

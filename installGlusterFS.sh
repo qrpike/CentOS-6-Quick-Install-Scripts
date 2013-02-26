@@ -8,6 +8,7 @@ wget -P /etc/yum.repos.d http://download.gluster.org/pub/gluster/glusterfs/LATES
 yum install -y glusterfs{-fuse,-server}
 
 chkconfig glusterd on
+service glusterd start
 
 echo 'GlusterFS should be installed'
 gluster peer status

@@ -15,6 +15,12 @@ Install NTP on CentOS 6.x
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
 
 
+Install GlusterFS on CentOS 6.x
+-----
+
+    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installGlusterFS.sh --insecure)
+
+
 Install NodeJS on CentOS 6.x
 -----
 

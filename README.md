@@ -9,6 +9,12 @@ Install OpenVZ on CentOS 6.x
     source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZ.sh --insecure)
 
 
+Install NTP on CentOS 6.x
+-----
+
+    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
+
+
 Install NodeJS on CentOS 6.x
 -----
 

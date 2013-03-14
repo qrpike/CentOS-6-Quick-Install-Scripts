@@ -36,7 +36,7 @@ echo 'Files extracted....'
 
 cd ./$FOLDER
 
-yum install -y openssl-devel
+yum install openssl-devel gcc-c++ gcc
 yum groupinstall -y "Development Tools"
 
 echo 'Configuring and installing NodeJS'

@@ -39,10 +39,8 @@ cd ./$FOLDER
 yum install openssl-devel gcc-c++ gcc
 yum groupinstall -y "Development Tools"
 
-echo 'Configuring and installing NodeJS'
-
-./configure
-make
-make install
+touch ~/.profile
+echo 'export PATH=/usr/local/src/node-v0.10.0-linux-x64/bin:$PATH' >> ~/.profile
+source ~/.profile
 
 echo 'welllllll....... that should be it.... hopefully :)'

@@ -6,7 +6,7 @@ source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/ma
 # CHANGE THIS URL FOR DIFF VERSIONS :::
 # -----------------------------------------------------
 
-JSURL=http://nodejs.org/dist/v0.8.18/node-v0.8.18.tar.gz
+JSURL=http://nodejs.org/dist/v0.10.0/node-v0.10.0-linux-x64.tar.gz
 
 # -----------------------------------------------------
 

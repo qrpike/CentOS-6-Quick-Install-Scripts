@@ -1,12 +1,13 @@
 #!/bin/bash
 
-#install NTP just incase:
+# install NTP just incase:
+# - NodeJS throws an error if you try to compile with a server date before the NodeJS release date
 source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
 
 # CHANGE THIS URL FOR DIFF VERSIONS :::
 # -----------------------------------------------------
 
-JSURL=http://nodejs.org/dist/v0.8.18/node-v0.8.18.tar.gz
+JSURL=http://nodejs.org/dist/v0.10.0/node-v0.10.0.tar.gz
 
 # -----------------------------------------------------
 

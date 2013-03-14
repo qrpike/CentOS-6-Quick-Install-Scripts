@@ -39,8 +39,7 @@ cd ./$FOLDER
 yum install openssl-devel gcc-c++ gcc
 yum groupinstall -y "Development Tools"
 
-touch ~/.profile
-echo 'export PATH=/usr/local/src/node-v0.10.0-linux-x64/bin:$PATH' >> ~/.profile
-source ~/.profile
+echo 'export PATH=/usr/local/src/node-v0.10.0-linux-x64/bin:$PATH' >> /etc/profile
+source /etc/profile
 
 echo 'welllllll....... that should be it.... hopefully :)'

@@ -1,6 +1,13 @@
 #!/bin/bash
 
-echo 'installing and configuring NTP'
+echo 'Choose timezone:'
+ls /usr/share/zoneinfo/
+read -p 'Enter zoneinfo to set ' zoneinfo
+zoneinfo=${zoneinfo:-Hongkong}
+rm /etc/localtime
+ln -s /usr/share/zoneinfo/$zoneinfo /etc/localtime
+
+echo 'Installing and configuring NTP'
 
 yum install -y wget ntp
 chkconfig ntpd on

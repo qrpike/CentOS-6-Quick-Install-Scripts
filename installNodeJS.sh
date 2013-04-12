@@ -5,6 +5,6 @@ echo "source ~/nvm/nvm.sh" >> ~/.bashrc
 source ~/.bashrc 
 read -p 'Enter node.js version to install : (0.10.2) ' version
 version=${version:-0.10.2}
-nvm install version
+nvm install $version
 
-echo 'welllllll....... that should be it.... hopefully :)'
+echo 'Have fun with Node.js'

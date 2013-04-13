@@ -2,7 +2,7 @@
 
 echo 'Choose timezone:'
 ls /usr/share/zoneinfo/
-read -p 'Enter zoneinfo to set ' zoneinfo
+read -p 'Enter zoneinfo to set (Hongkong)' zoneinfo
 zoneinfo=${zoneinfo:-Hongkong}
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/$zoneinfo /etc/localtime

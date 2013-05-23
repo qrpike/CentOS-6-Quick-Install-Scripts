@@ -13,7 +13,7 @@ wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
 
 
-yum install -y nodejs
+yum install -y nodejs npm
 
 clear
 

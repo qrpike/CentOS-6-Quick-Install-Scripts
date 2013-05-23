@@ -15,3 +15,7 @@ sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
 
 yum install -y nodejs
 
+clear
+
+echo "Node is now installed @ version:"
+node --version

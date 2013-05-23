@@ -1,49 +1,17 @@
 #!/bin/bash
 
+cd ~/
+
 # install NTP just incase:
 # - NodeJS throws an error if you try to compile with a server date before the NodeJS release date
 source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
 
-# CHANGE THIS URL FOR DIFF VERSIONS :::
-# -----------------------------------------------------
+yum install -y wget
 
-JSURL=http://nodejs.org/dist/v0.10.0/node-v0.10.0.tar.gz
+wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
 
-# -----------------------------------------------------
 
-FILENAME=${JSURL##*/} # get the filename from the URL
-TEMPFOLDER="${FILENAME%.*}"
-FOLDER="${TEMPFOLDER%.*}"
+yum install -y nodejs
 
-clear
-
-echo 'We are going to install NodeJS for you... '
-
-echo 'checking if we got wget magic'
-yum install -y wget #check if we have it
-
-echo 'lets download nodejs..'
-
-rm -r -f /usr/local/src
-mkdir -p /usr/local/src
-cd /usr/local/src
-
-wget $JSURL
-
-mkdir -p ./nodesrc
-tar -zxvf ./$FILENAME
-
-echo 'Files extracted....'
-
-cd ./$FOLDER
-
-yum install -y openssl-devel
-yum groupinstall -y "Development Tools"
-
-echo 'Configuring and installing NodeJS'
-
-./configure
-make
-make install
-
-echo 'welllllll....... that should be it.... hopefully :)'

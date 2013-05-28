@@ -36,14 +36,13 @@ sysctl -p
 sed -i 's/NEIGHBOUR_DEVS=detect/NEIGHBOUR_DEVS=all/g' /etc/vz/vz.conf
 sed -i 's/SELINUX=enabled/SELINUX=disabled/g' /etc/sysconfig/selinux
 
-echo 'Now downloading CentOS6 x86_64 template....'
-cd /vz/template/cache
-wget http://download.openvz.org/template/precreated/centos-6-x86_64.tar.gz
+clear
+
+echo "OpenVZ Is now Installed.."
 
 echo ' - - - - - - - - - - - - - - - - - - - - - - '
-echo ' disable iptables to access VMs /etc/init.d/iptables stop && chkconfig iptables off'
+echo ' disable iptables to access VMs:$ /etc/init.d/iptables stop && chkconfig iptables off'
 echo ' - - - - - - - - - - - - - - - - - - - - - - '
-
-echo '..... well.... that should do it. Your going to need to run "reboot".'
-echo 'oh, and ur welcome...'
+echo ' To download CentOS base template for openvz, run: '
+echo ' cd /vz/template/cache && wget http://download.openvz.org/template/precreated/centos-6-x86_64.tar.gz '
 

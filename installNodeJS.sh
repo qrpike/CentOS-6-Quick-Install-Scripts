@@ -9,11 +9,7 @@ source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/ma
 
 JSURL=http://nodejs.org/dist/node-latest.tar.gz
 
-# -----------------------------------------------------
-
-FILENAME=${JSURL##*/} # get the filename from the URL
-TEMPFOLDER="${FILENAME%.*}"
-FOLDER="${TEMPFOLDER%.*}"
+# ----------------------------------------------------- 
 
 clear
 
@@ -31,14 +27,14 @@ cd /usr/local/src
 wget $JSURL
 
 mkdir -p ./nodesrc
-tar -zxvf ./$FILENAME
+cd ./nodesrc
+tar -zxvf ./node-latest.tar.gz
 
 echo 'Files extracted....'
 
-cd ./$FOLDER
+cd ./node-latest.tar.gz
 
-yum install -y openssl-devel
-yum groupinstall -y "Development Tools"
+yum install -y openssl-devel gcc-c++ make git
 
 echo 'Configuring and installing NodeJS'
 

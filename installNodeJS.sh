@@ -25,14 +25,12 @@ mkdir -p /usr/local/src
 cd /usr/local/src
 
 wget $JSURL
-
-mkdir -p ./nodesrc
-cd ./nodesrc
+ 
 tar -zxvf ./node-latest.tar.gz
 
 echo 'Files extracted....'
 
-cd ./node-latest
+cd node-v*
 
 yum install -y openssl-devel gcc-c++ make git
 

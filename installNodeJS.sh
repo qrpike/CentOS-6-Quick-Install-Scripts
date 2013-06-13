@@ -32,7 +32,7 @@ tar -zxvf ./node-latest.tar.gz
 
 echo 'Files extracted....'
 
-cd ./node-latest.tar.gz
+cd ./node-latest
 
 yum install -y openssl-devel gcc-c++ make git
 

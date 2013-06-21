@@ -12,6 +12,8 @@ echo 'Below should be the correct date:'
 date
 
 
+sed -i 's/centos.pool.ntp.org/pool.ntp.org iburst/g' /etc/ntp.conf
+
 # Add a time message on SSH logins:
 cat >>~/.bashrc <<EOL
 echo '--------------------------'

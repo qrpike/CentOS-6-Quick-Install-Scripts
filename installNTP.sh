@@ -23,11 +23,18 @@ sed -i 's/centos.pool.ntp.org/pool.ntp.org iburst/g' /etc/ntp.conf
 # Add this to not fail on big time gaps ( VMs that resume/pause )
 echo "tinker panic 0" >> /etc/ntp.conf 
 
-# Add a time message on SSH logins:
-cat >>~/.bashrc <<EOL
+# Create a script to update time. 
+cat >/usr/bin/updatetime <<EOL
 /etc/init.d/ntpd stop
 ntpdate pool.ntp.org
 /etc/init.d/ntpd start
+EOL
+
+# now we can just run "updatetime" to restart and sync time servers:
+chmod +x /usr/bin/updatetime
+
+# Add a time message on SSH logins:
+cat >>~/.bashrc <<EOL
 echo '--------------------------'
 echo "Current Time:"
 date

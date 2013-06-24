@@ -25,6 +25,9 @@ echo "tinker panic 0" >> /etc/ntp.conf
 
 # Add a time message on SSH logins:
 cat >>~/.bashrc <<EOL
+/etc/init.d/ntpd stop
+ntpdate pool.ntp.org
+/etc/init.d/ntpd start
 echo '--------------------------'
 echo "Current Time:"
 date

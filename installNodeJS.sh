@@ -2,7 +2,7 @@
 
 # install NTP just incase:
 # - NodeJS throws an error if you try to compile with a server date before the NodeJS release date
-source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
+#source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
 
 # CHANGE THIS URL FOR DIFF VERSIONS :::
 # -----------------------------------------------------

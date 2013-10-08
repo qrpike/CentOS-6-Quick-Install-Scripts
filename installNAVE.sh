@@ -6,6 +6,7 @@ wget https://raw.github.com/isaacs/nave/master/nave.sh
 mv nave.sh nave
 chmod +x nave
 nave install latest
+nave use latest
 
 clear
 echo "You now have NodeJS Installed @ version:"

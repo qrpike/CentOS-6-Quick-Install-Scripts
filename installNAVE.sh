@@ -1,12 +1,11 @@
 #!/bin/bash
 
 yum install -y wget
-cd /usr/local/bin/
+cd
 wget https://raw.github.com/isaacs/nave/master/nave.sh
-mv nave.sh nave
-chmod +x nave
-nave install latest
-nave use latest
+chmod +x nave.sh
+./nave.sh install stable
+./nave.sh use stable
 
 clear
 echo "You now have NodeJS Installed @ version:"

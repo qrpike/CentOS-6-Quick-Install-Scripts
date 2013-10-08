@@ -4,8 +4,8 @@ yum install -y wget
 cd
 wget https://raw.github.com/isaacs/nave/master/nave.sh
 chmod +x nave.sh
-./nave.sh install stable
-./nave.sh use stable
+./nave.sh install stable || true
+./nave.sh use stable || true
 
 clear
 echo "You now have NodeJS Installed @ version:"

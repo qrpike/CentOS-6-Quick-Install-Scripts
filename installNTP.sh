@@ -32,11 +32,3 @@ EOL
 
 # now we can just run "updatetime" to restart and sync time servers:
 chmod +x /usr/bin/updatetime
-
-# Add a time message on SSH logins:
-cat >>~/.bashrc <<EOL
-echo '--------------------------'
-echo "Current Time:"
-date
-echo '--------------------------'
-EOL

@@ -22,3 +22,14 @@ mv /etc/sysconfig/network-scripts/ifcfg-em2 /etc/sysconfig/network-scripts/ifcfg
 sed -i 's/em2/eth1/g' /etc/sysconfig/network-scripts/ifcfg-eth1
 rm /etc/udev/rules.d/70-persistent-net.rules
 echo "MUST REBOOT TO TAKE EFFECT"
+
+
+
+
+
+
+
+
+https://github.com/marafa/openstack/blob/master/openstack-outside.sh
+http://openstack.redhat.com/Neutron_with_existing_external_network
+http://openstack.redhat.com/GettingStartedHavana_w_GRE

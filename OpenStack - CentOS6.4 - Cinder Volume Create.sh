@@ -29,7 +29,7 @@ echo "MUST REBOOT TO TAKE EFFECT"
 
 
 
-
+https://github.com/cloudbase/unattended-setup-scripts/blob/master/configure-rdo.sh
 https://github.com/marafa/openstack/blob/master/openstack-outside.sh
 http://openstack.redhat.com/Neutron_with_existing_external_network
 http://openstack.redhat.com/GettingStartedHavana_w_GRE

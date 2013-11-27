@@ -9,9 +9,8 @@ echo 'installing wget..'
 yum install -y wget
 
 echo 'now adding openvz Repo'
-cd /etc/yum.repos.d
-wget http://download.openvz.org/openvz.repo
-rpm --import http://download.openvz.org/RPM-GPG-Key-OpenVZ
+wget -P /etc/yum.repos.d/ http://ftp.openvz.org/openvz.repo
+rpm --import http://ftp.openvz.org/RPM-GPG-Key-OpenVZ
 
 echo 'Installing OpenVZ Kernel'
 yum install -y vzkernel.x86_64

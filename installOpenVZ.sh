@@ -29,6 +29,13 @@ echo 'net.ipv4.conf.all.send_redirects = 0' >> /etc/sysctl.conf
 echo 'net.ipv4.icmp_echo_ignore_broadcasts=1' >> /etc/sysctl.conf
 echo 'net.ipv4.conf.default.forwarding=1' >> /etc/sysctl.conf
 
+# Changing default VZ settings:
+# Default to Ploop & CentOS 6 - x86_64
+sed -i 's/#NEIGHBOUR_DEVS=all/NEIGHBOUR_DEVS=all/g' /etc/vz/vz.conf
+sed -i 's/#VE_LAYOUT=ploop/VE_LAYOUT=ploop/g' /etc/vz/vz.conf
+sed -i 's/centos-6-x86/centos-6-x86_64/g' /etc/vz/vz.conf
+
+
 echo 'Done with that, purging your sys configs'
 sysctl -p
 

@@ -28,7 +28,7 @@ Install NodeJS ( Latest Stable ) on CentOS 6.x
     
     Install with Nave (recommended):
     
-    source <(curl -s https://raw.github.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNAVE.sh --insecure)
+    curl https://gist.github.com/qrpike/7794568/raw/main.sh | sh
 
 
 Install LAMP stack on CentOS 6.x

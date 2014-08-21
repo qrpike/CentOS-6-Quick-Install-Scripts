@@ -13,7 +13,7 @@ wget -P /etc/yum.repos.d/ http://ftp.openvz.org/openvz.repo
 rpm --import http://ftp.openvz.org/RPM-GPG-Key-OpenVZ
 
 echo 'Installing OpenVZ Kernel'
-yum install -y vzkernel.x86_64
+yum install -y vzkernel
 
 echo 'Installing additional tools'
 yum install -y vzctl vzquota ploop

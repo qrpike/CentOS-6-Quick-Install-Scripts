@@ -1,5 +1,5 @@
 #!/bin/bash
-# run: source <(curl -s https://raw.github.com/qrpike/CentOS6---OpenVZ-Installer/master/installOpenVZ.sh)
+# run: source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZ.sh)
 
 
 clear

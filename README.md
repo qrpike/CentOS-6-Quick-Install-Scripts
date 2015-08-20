@@ -6,31 +6,31 @@ To install any of the following, just copy and paste the text in the box on a fr
 Install OpenVZ on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZ.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZ.sh | sh
 
 
 Install OpenVZWebPanel on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZWebPanel.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installOpenVZWebPanel.sh | sh
 
 
 Install NTP on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNTP.sh | sh
 
 
 Install GlusterFS on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installGlusterFS.sh --insecure)
+   curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installGlusterFS.sh | sh
 
 
 Install NodeJS ( Latest Stable ) on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNodeJS.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installNodeJS.sh | sh
     
     Install with Nave (recommended):
     
@@ -40,11 +40,11 @@ Install NodeJS ( Latest Stable ) on CentOS 6.x
 Install LAMP stack on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installLAMP.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installLAMP.sh | sh
 
 
 Install MongoDB on CentOS 6.x
 -----
 
-    source <(curl -s https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installMongoDB.sh --insecure)
+    curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installMongoDB.sh | sh
 
